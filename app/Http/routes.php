@@ -14,3 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/hi', function () {
+    return view('hi')->with('title','hello world');
+});
+
+
+
